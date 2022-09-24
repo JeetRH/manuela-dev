@@ -14,7 +14,7 @@
           "op": "execute-notebook-node",
           "app_data": {
             "filename": "preprocessing.ipynb",
-            "runtime_image": "quay.io/troyer/industrial-edge-runtime-image:v0.1",
+            "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
             "env_vars": [],
             "include_subdirectories": false,
             "outputs": [
@@ -67,7 +67,7 @@
           "op": "execute-notebook-node",
           "app_data": {
             "filename": "feature_extraction.ipynb",
-            "runtime_image": "quay.io/troyer/industrial-edge-runtime-image:v0.1",
+            "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
             "env_vars": [],
             "include_subdirectories": false,
             "invalidNodeError": null,
@@ -126,7 +126,7 @@
           "op": "execute-notebook-node",
           "app_data": {
             "filename": "verification.ipynb",
-            "runtime_image": "quay.io/troyer/industrial-edge-runtime-image:v0.1",
+            "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
             "env_vars": [
               "MODEL_FILE=model.joblib"
             ],
@@ -184,14 +184,14 @@
           "op": "execute-notebook-node",
           "app_data": {
             "filename": "push-model.ipynb",
-            "runtime_image": "quay.io/troyer/industrial-edge-runtime-image:v0.1",
+            "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
             "env_vars": [
-              "S3_ACCESS_KEY=3jr8zRcZwIKRmAH4DN7U",
-              "S3_SECRET_KEY=T7VnUc6DGDUutyaBDHivpXBozO6vCq3av885JryU",
-              "OPS_REPO_LOCATION=https://gitea.apps.cluster-4p2cb.4p2cb.sandbox2110.opentlc.com/lab-user/industrial-edge.git",
+              "S3_ACCESS_KEY=YP9tM9wsGUtpy30i9zxz",
+              "S3_SECRET_KEY=DYCNM9Ow1i8/deQynjRNkYG3AelUtUca4DFDHnmI",
+              "OPS_REPO_LOCATION=https://gitea.apps.cluster-qkzbv.qkzbv.sandbox515.opentlc.com/lab-user/industrial-edge.git",
               "GIT_USER=lab-user",
               "GIT_PASSWORD=openshift",
-              "S3_ENDPOINT_URL=http://s3-openshift-storage.apps.cluster-pzdw5.pzdw5.sandbox1864.opentlc.com/"
+              "S3_ENDPOINT_URL=https://s3-openshift-storage.apps.cluster-tqvxs.tqvxs.sandbox518.opentlc.com/"
             ],
             "include_subdirectories": false,
             "invalidNodeError": null,
@@ -247,7 +247,7 @@
           "op": "execute-notebook-node",
           "app_data": {
             "filename": "training_bm.ipynb",
-            "runtime_image": "quay.io/troyer/industrial-edge-runtime-image:v0.1",
+            "runtime_image": "quay.io/mmurakam/industrial-edge-ml-pipeline-image:v0.13.0",
             "env_vars": [],
             "include_subdirectories": false,
             "outputs": [
